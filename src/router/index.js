@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Headphones from '../views/Headphones.vue'
+import Speakers from '../views/Speakers.vue'
+import Earphones from '../views/Earphones.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +12,21 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/headphones',
+    name: 'Headphones',
+    component: Headphones
+  },
+  {
+    path: '/speakers',
+    name: 'Speakers',
+    component: Speakers
+  },
+  {
+    path: '/earphones',
+    name: 'Earphones',
+    component: Earphones
   },
   {
     path: '/about',

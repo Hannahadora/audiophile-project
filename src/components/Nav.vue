@@ -1,18 +1,22 @@
 <template>
-  <div class="h-wrapper nav">
+  <div class="nav">
     <div>
       <img src="../assets/images/shared/desktop/logo.svg" alt="logo" />
     </div>
-    <div>
-      <ul class="flex items-center justify-center gap-10">
-        <li class="nav-list-items">Home</li>
-        <li class="nav-list-items">Headphones</li>
-        <li class="nav-list-items">Speakers</li>
-        <li class="nav-list-items">Earphones</li>
-      </ul>
+    <div class="flex items-center justify-center gap-10">
+      <router-link to="/home" class="nav-list-items">Home</router-link>
+      <router-link to="/headphones" class="nav-list-items"
+        >Headphones</router-link
+      >
+      <router-link to="/speakers" class="nav-list-items">Speakers</router-link>
+      <router-link to="/earphones" class="nav-list-items"
+        >Earphones</router-link
+      >
     </div>
     <div>
-      <img src="../assets/images/shared/desktop/icon-cart.svg" alt="cart" />
+      <router-link to="/cart">
+        <img src="../assets/images/shared/desktop/icon-cart.svg" alt="cart" />
+      </router-link>
     </div>
   </div>
 </template>
@@ -23,15 +27,18 @@ export default {};
 
 <style>
 .nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .nav-list-items {
-    text-transform: capitalize;
-    color: #fff;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 24px 0px;
+  font-size: 14px;
 }
 </style>
