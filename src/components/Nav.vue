@@ -4,7 +4,7 @@
       <img src="../assets/images/shared/desktop/logo.svg" alt="logo" />
     </div>
     <div class="flex items-center justify-center gap-10">
-      <router-link to="/home" class="nav-list-items">Home</router-link>
+      <router-link to="/" class="nav-list-items">Home</router-link>
       <router-link to="/headphones" class="nav-list-items"
         >Headphones</router-link
       >

@@ -22,18 +22,20 @@ export default {
 
 <style scoped>
 .h-button {
-  
+  padding: 10px 24px;
+  border-radius: 5px;
 }
 .p-btn {
   background: rgb(217, 126, 74);
   color: rgb(250, 250, 250);
 }
 .s-btn {
-  background: rgb(217, 126, 74);
+  background: #000000;
   color: rgb(250, 250, 250);
 }
 .t-btn {
   background: rgb(217, 126, 74);
-  color: rgb(250, 250, 250);
+  color: #000000;
+  border: 1px solid #000;
 }
 </style>
