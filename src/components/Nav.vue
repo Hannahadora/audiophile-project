@@ -40,5 +40,10 @@ export default {};
   color: #fff;
   padding: 24px 0px;
   font-size: 14px;
+  font-weight: 600;
+}
+
+.nav a.router-link-active {
+  color: #D87E4A;
 }
 </style>
