@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Headphones from '../views/Headphones.vue'
 import Speakers from '../views/Speakers.vue'
 import Earphones from '../views/Earphones.vue'
+import Products from '../views/Products.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/earphones',
     name: 'Earphones',
     component: Earphones
+  },
+  {
+    path: '/products/:category',
+    name: 'Products',
+    component: Products
   },
   {
     path: '/about',

@@ -5,11 +5,11 @@
     </div>
     <div class="flex items-center justify-center gap-10">
       <router-link to="/" class="nav-list-items">Home</router-link>
-      <router-link to="/headphones" class="nav-list-items"
+      <router-link to="/products/headphones" class="nav-list-items"
         >Headphones</router-link
       >
-      <router-link to="/speakers" class="nav-list-items">Speakers</router-link>
-      <router-link to="/earphones" class="nav-list-items"
+      <router-link to="/products/speakers" class="nav-list-items">Speakers</router-link>
+      <router-link to="/products/earphones" class="nav-list-items"
         >Earphones</router-link
       >
     </div>
@@ -22,7 +22,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+};
 </script>
 
 <style>

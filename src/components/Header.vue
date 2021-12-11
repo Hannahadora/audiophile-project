@@ -22,7 +22,7 @@
       <Button :pryBtn="true" class="mt-6">SEE PRODUCT</Button>
     </div>
     <div v-else class="text-center py-40">
-      <h2 class="heading">
+      <h2 class="heading capitalize">
         {{ activeNav }}
       </h2>
     </div>
@@ -43,7 +43,7 @@ export default {
 
   computed: {
     activeNav() {
-      return this.$route.name;
+      return this.$route.params.category;
     },
   },
 };
